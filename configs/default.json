@@ -1,0 +1,18 @@
+{
+  "app": {
+    "key": "3MVG9xOCXq4ID1uEESOs_ggfxX6afmyzvfZEaAoesVAqa8Af7JAecM4oyHq5rqOK1BFwZ08RBaYEYLiSKbCWS",
+    "secret": "4620345335555489965",
+    "callbackURL": "https://localhost:21000/callback"
+  },
+  "ports": {
+    "sfExplorer": 21000
+  },
+  "ssl": {
+    "key": "certs/server.key",
+    "cert": "certs/server.crt",
+    "secureCookies": true
+  },
+  "sf": {
+    "scope": "api id web"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "jsForceInAction",
+  "version": "0.0.1",
+  "description": "A demo project of complex utilization of the jsForce module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbockus/jsForceInAction.git"
+  },
+  "keywords": [
+    "jsForce",
+    "salesforce"
+  ],
+  "author": "Gordon Bockus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbockus/jsForceInAction/issues"
+  },
+  "homepage": "https://github.com/gbockus/jsForceInAction",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.2",
+    "compression": "^1.5.2",
+    "config": "^1.15.0",
+    "express": "^4.13.1",
+    "jsforce": "^1.4.1",
+    "redis": "^0.12.1"
+  }
+}
