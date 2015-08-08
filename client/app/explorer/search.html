@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-lg-12">
+    <input class="sfe-object-filter"
+           type="text"
+           ng-model="query"
+           ng-model-options="{ debounce: 200 }"
+           placeholder="Filter Objects"
+           ng-change="onSearchChange()">
+    <ul class="sfe-object-list">
+      <li ng-repeat="obj in objs = (objectTypes | filter: {label: query})">
+        <span class="sfe-object-label" ng-click="selectObject(obj)">{{obj.label}}</span>
+      </li>
+      <li ng-hide="objs.length">
+        <span class="sfe-object-label">No Results!</span>
+      </li>
+    </ul>
+  </div>
+</div>

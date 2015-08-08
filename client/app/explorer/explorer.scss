@@ -1,0 +1,80 @@
+
+.sfe-object-filter {
+  margin-top: 1em;
+  width: 20em;
+  padding: .5em;
+}
+
+.sfe-object-list {
+  margin: 1em 0;
+  max-height: 20em;
+  overflow-y: scroll;
+  border: 1px solid $cloud;
+  border-radius: 1em;
+  padding: .5em;
+
+  li {
+    margin: .5em;
+    list-style: none;
+
+    &:hover {
+      color: $cloud;
+    }
+  }
+}
+
+.sfe-object-label {
+  cursor: pointer;
+}
+
+.sfe-object-description {
+  border: 1px solid $heroBlue;
+  border-radius: 1em;
+  margin: 1em 0;
+  padding: 0;
+
+  div {
+    padding: 0;
+  }
+
+  .btn {
+    margin-right: .5em;
+    font-size: 1.5em;
+    color: $white;
+  }
+
+  .sfe-description-data {
+    padding: .5em;
+  }
+}
+
+.sfe-object-description-header {
+  background-color: $heroBlue;
+  color: $white;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.sfe-object-description-header-text {
+  margin: .5em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sfe-description-data,
+.sfe-description-data div {
+  display: inline-block;
+}
+
+.sfe-description-data {
+  border-bottom: 1px solid $lightGray;
+  padding: 1em .5em;
+}
+
+
+.sfe-desc-label {
+  width: 13em;
+  text-align: left;
+  color: $cloud;
+  text-transform: capitalize;
+}

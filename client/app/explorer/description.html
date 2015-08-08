@@ -1,0 +1,16 @@
+<div class="col-xs-12 sfe-object-description" ui-view="description">
+  <div class="col-xs-12 sfe-object-description-header">
+    <span class="sfe-object-description-header-text"> {{data.objectDescription.name}}</span>
+    <button class="btn btn-link pull-right" ng-click="goToRecent()">Recent
+    </button>
+    <button class="btn btn-link pull-right"
+            ng-click="goToSearch()">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+  <div ng-repeat="(key, value) in data.objectDescription"
+       class="sfe-description-data col-xs-12" ng-if="isSimpleValue(value)">
+    <div class="sfe-desc-label">{{key}}:</div>
+    <div class="sfe-desc-value">{{value}}</div>
+  </div>
+</div>

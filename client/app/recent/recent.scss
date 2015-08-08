@@ -1,0 +1,30 @@
+.sfe-header-row {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border-bottom: 1px solid $cloud;
+  padding-bottom: .5em;
+
+  span {
+    font-weight: bold;
+    color: $darkGray;
+  }
+}
+
+.sfe-recent-obj-row:hover div {
+  background-color: #f0f0f0;
+}
+
+.sfe-recent-obj-row {
+  padding: 0;
+
+  div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.sfe-no-recent-obj-row {
+  text-align: center;
+}
+

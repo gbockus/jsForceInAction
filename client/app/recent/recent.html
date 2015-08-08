@@ -1,0 +1,36 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1 ng-if="!data.objectName">Recent Objects</h1>
+
+    <h1 ng-if="data.objectName">Recent {{data.objectName}}</h1>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row sfe-header-row">
+    <div class="col-xs-4">
+      <span>Type</span>
+    </div>
+    <div class="col-xs-4">
+      <span>Name</span>
+    </div>
+    <div class="col-xs-4">
+      <span>Id</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="sfe-recent-obj-row col-xs-12" ng-repeat="obj in recentObjects">
+      <div class="col-xs-4">{{obj.attributes.type}}</div>
+      <div class="col-xs-4">{{obj.Name}}</div>
+      <div class="col-xs-4">{{obj.Id}}</div>
+    </div>
+    <div ng-hide="recentObjects.length" class="sfe-no-recent-obj-row col-xs-12">
+      <div class="col-xs-12">No Recent Objects!</div>
+    </div>
+  </div>
+</div>
+
+
+
