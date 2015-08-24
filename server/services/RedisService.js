@@ -16,6 +16,9 @@ var redisService = (function() {
     },
     hmset: function(key, obj) {
       client.hmsetAsync(key, obj);
+    },
+    hgetall: function(key) {
+      return client.hgetallAsync(key);
     }
   }
 
