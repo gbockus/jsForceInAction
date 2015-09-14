@@ -8,5 +8,5 @@ Install node and grunt-cli
 https://nodejs.org/en/
 http://gruntjs.com/getting-started
 
-Pull down this repositiry to a local directory
+Pull down this repository to a local directory
 git clone 
