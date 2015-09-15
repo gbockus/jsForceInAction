@@ -22,8 +22,9 @@ module.exports = {
   },
 
   app: {
-    key: "3MVG9xOCXq4ID1uEESOs_ggfxX6afmyzvfZEaAoesVAqa8Af7JAecM4oyHq5rqOK1BFwZ08RBaYEYLiSKbCWS",
-    secret: "4620345335555489965",
+    key: "",
+    secret: "",
     callbackURL: "https://localhost:21000/callback"
   }
+
 };
