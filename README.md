@@ -33,6 +33,12 @@ Copy the clientId and secret and populate the values
 ```server/config/environment/development.json```
 under the app.key and app.secret properties.
 
+Set two environment variables.  Note that you will need to update the NODE_PATH to match your local install directory.
+```
+export NODE_PATH=development
+export NODE_PATH=/Users/gbockus/local:/Users/gbockus/local/lib/node_modules:/Users/gbockus/github/jsForceInAction/server
+```
+
 Execute the grunt serve command
 ```
 grunt serve
