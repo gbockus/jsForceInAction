@@ -14,11 +14,13 @@ You will also need redis, a local key value store
 http://redis.io/download
 
 After installation start redis, the default port is used in the application.
+
 ```
 <Install Location>/redis/current/src/redis-server
 ```
 
 Run npm install and bower update
+
 ```
 cd jsForceInAction
 npm install
@@ -29,11 +31,15 @@ You will need to create a connected app for OAuth credentials for Salesforce.
 See this blog post for instructions on getting that information.
 https://developer.salesforce.com/blogs/developer-relations/2015/08/creating-jquery-application-using-rest-api.html
 
-Copy the clientId and secret and populate the values  
-```server/config/environment/development.json```
-under the app.key and app.secret properties.
+Copy the clientId and secret and populate the values under the 'app.key' and 'app.secret' properties.
+
+```
+server/config/environment/development.json
+```
+
 
 Set two environment variables.  Note that you will need to update the NODE_PATH to match your local install directory.
+
 ```
 export NODE_PATH=development
 export NODE_PATH=/Users/gbockus/local:/Users/gbockus/local/lib/node_modules:/Users/gbockus/github/jsForceInAction/server
